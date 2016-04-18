@@ -106,6 +106,7 @@ namespace Gaming {
         // Status: Over!
         //
         friend std::ostream &operator<<(std::ostream &os, const Game &game);
+
     };
 
 }

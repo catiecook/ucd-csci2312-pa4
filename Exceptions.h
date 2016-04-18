@@ -16,7 +16,9 @@ namespace Gaming {
         void setName(std::string name);
     public:
         std::string getName() const { return __name; };
-        friend std::ostream &operator<<(std::ostream &os, const GamingException &ex);
+        friend std::ostream &operator<<(std::ostream &os, const GamingException &ex) {
+            return os;
+        }
     };
 
     class DimensionEx : public GamingException {

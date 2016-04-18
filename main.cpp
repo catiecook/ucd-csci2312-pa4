@@ -6,6 +6,7 @@
 #include "ErrorContext.h"
 #include "GamingTests.h"
 
+
 using std::cout;
 using std::endl;
 
@@ -26,8 +27,8 @@ int main() {
 
     cout << endl;
 
-    ErrorContext ec(cout);
-
+   ErrorContext ec(cout);
+//
     // piece tests
     test_piece_smoketest(ec);
     test_piece_print(ec, NumIters);
@@ -37,14 +38,14 @@ int main() {
     test_piece_interaction(ec, NumIters);
 
     // surroundings tests
-    test_surroundings_smoketest(ec);
+   test_surroundings_smoketest(ec);
 
     // action tests
     test_action_smoketest(ec);
 
     // game tests
     test_game_smoketest(ec);
-    test_game_populate(ec, NumIters);
+   test_game_populate(ec, NumIters);
     test_game_getpiece(ec, NumIters);
     test_game_print(ec, NumIters);
     test_game_randomization(ec, NumIters);
